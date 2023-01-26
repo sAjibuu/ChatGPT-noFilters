@@ -15,7 +15,7 @@ def main():
         exit(1)
 
     else:
-        print("\nThinking, please wait...")
+        print("\nThinking, please wait...\n")
         url = "https://api.openai.com/v1/completions"
 
         headers = {
@@ -38,7 +38,7 @@ def main():
 
         else:
             if "choices" in answer:
-                print(answer["choices"][0]["text"])
+                print(answer["choices"][0]["text"].replace("\n", ""))
             else:
                 print("ChatGPT did not understand your question, please try again...")
 
