@@ -7,11 +7,16 @@ Python3 required!
 Installation: 
 
     pip install requests
+    
     or 
+    
     pip3 install requests
 
 Run the script as follow:
 
+    python chatgpt.py "your question"
+    
+    or
+    
     python3 chatgpt.py "your question"
-
 
