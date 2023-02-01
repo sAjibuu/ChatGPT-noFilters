@@ -9,6 +9,7 @@ Installation:
     pip3 install requests
 
 Run the script as follow:
-python chatgpt.py "your question"
+
+    python chatgpt.py "your question"
 
 
