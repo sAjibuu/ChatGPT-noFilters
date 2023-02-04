@@ -27,7 +27,7 @@ def main():
             "model": "text-davinci-003",
             "prompt": f"{sys.argv[1]}",
             "max_tokens": 4000,
-            "temperature": 1.0
+            "temperature": 1.0,
         }
 
         req = requests.post(url, headers=headers, json=data)
@@ -38,10 +38,11 @@ def main():
 
         else:
             if "choices" in answer:
-                print(answer["choices"][0]["text"].replace("\n", ""))
+                print(answer["choices"][0]["text"].lstrip())
             else:
                 print("ChatGPT did not understand your question, please try again...")
 
 
 if __name__ == "__main__":
     main()
+
